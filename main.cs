@@ -1,82 +1,23 @@
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 
-class MainClass {
-  public static void Main(string[] args) {
-    
-    // Объекты
-    // User user1 = new User();
-    // User user2 = new User();
+using Machines;
 
-    // user1.name = "Ilya";
-    // user1.password = "1234";
+class MyClass 
+{
+  public static void Main(string[] args) 
+  {
+    // creating a new coffee machine for no reason
+    CoffeeMachine coffeeMachine = new CoffeeMachine(new List<string>() {
+      "Coffee",
+      "Coffee with sugar",
+      "Coffee with cream",
+      "Hot chocolate",
+      "Water",
+    });
 
-    // user2.name = "Artem";
-    // user2.password = "1234555";
-
-// Вариант с конструктором
-    User user1 = new User() { Name = "Ilya", Password = "1234" };
-
-// Бесполезно, т.к. есть конструктор
-    // user1.Name = "asdf";
-    // user1.Password = "1234";
-
-    Console.WriteLine(user1.Name);
-    Console.WriteLine(user1.Password);
-
-    // user1.GetInfo();
-    // user2.GetInfo(); 
-
+    Console.WriteLine("Биба");
   }
 }
-
-// Пример реального класса 
-class User {
-  public string Name { get; set; }
-  public string Password { get; set; }
-
-// Це конструктор
-  // public User(string name, string password) {
-  //   Name = name;
-  //   Password = password;
-  // }
-}
-
-// Пример обычного класса
-// class User {
-//   // field
-//   private string name;
-//   private string password;
-
-//   // property
-//   public string Name {
-//     get {
-//       string str = "Iluha ";
-
-//       return str + name.ToUpper();
-//     }
-
-//     set {
-//       name = value;
-//     }
-//   }
-
-//   public string Password {
-//     get {
-//       return password;
-//     }
-
-//     set {
-//       password = value;
-//     }
-//   }
-// }
-
-// Пример супер простого, даже нереального класса
-// class User {
-//   public string name;
-//   public string password;
-
-//   public void GetInfo() {
-//     Console.WriteLine($"{ name } - { password }");
-//   }
-// }
