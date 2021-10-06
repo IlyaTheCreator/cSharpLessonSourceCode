@@ -1,0 +1,29 @@
+Checking Change event:
+Change event fired
+Change event fired
+
+A decimal from the first fraction: 0.4
+
+Addition:
+31
+---
+15
+
+Substraction:
+-19
+---
+15
+
+Multiplication:
+2
+---
+3
+
+Division:
+6
+---
+25
+
+Indexer checking:
+index 0 for num1: 10
+index 1 for num1: 35
